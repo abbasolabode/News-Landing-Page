@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 375px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-clr-1: hsl(35, 77%, 62%);
+  --primary-clr-2: hsl(5, 85%, 63%);
+
+  --neutral-clr-1: hsl(36, 100%, 99%);
+  --neutral-clr-2: hsl(233, 8%, 79%);
+  --neutral-clr-3: hsl(236, 13%, 42%);
+  --neutral-clr-4: hsl(240, 100%, 5%);
+
+  --font-family: "Inter", sans-serif;
+}
+
+/*to remove bullets in ul*/
+ul li {
+  list-style-type: none;
+}
+
+
+
+ul li a {
+  text-decoration: none;
+  font-size: 0.9375rem;
+  color: var(--neutral-clr-3);
+}
+
+
+
+
+ul li a:active{
+  color: var(--primary-clr-2);
+}
+
+
+
+
+.navigation-container .container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.navigation-container .container-wrapper .container-logo img {
+  width: 70%;
+  padding-left: 0.7rem;
+}
+
+
+
+/* main section */
+.grid-general-container .bg-container-img-card img {
+  width: 100%; /* big Image  for mobile*/
+  padding: 0.7rem 1rem;
+}
+
+/*The bright future of web 3.0*/
+.grid-general-container .container-bright-card h1 {
+  max-width: 75%;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: var(--font-family); /*Heading for second card */
+  line-height: 1.2;
+  padding-left: 1rem;
+  text-transform: capitalize;
+}
+
+.grid-general-container .flex-card-cta p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: var(--font-family); /* Paragraph for second card */
+  max-width: 83%;
+  margin: 1rem 0 0 1rem;
+  color: var(--neutral-clr-3);
+  line-height: 1.6;
+}
+
+.grid-general-container .flex-card-cta button {
+  width: 40%;
+  padding: 0.5rem 0.9rem;
+  margin: 1rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 600; /*  button for second card*/
+  font-family: var(--font-family);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--neutral-clr-1);
+  background-color: var(--primary-clr-2);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+
+
+
+
+/*Card Section*/
+.new-card {
+  border: 1px solid;
+  height: 420px;
+  margin: 3rem 1rem 3rem 1rem;
+  padding: 0.3rem 0.4rem 0 0.4rem;
+  background-color: var(--neutral-clr-4);
+}
+
+.new-card .inner-card-cta h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: var(--font-family);
+  color: var(--primary-clr-1);
+}
+
+.new-card .inner-card-cta {
+  margin: 0 1rem;
+}
+
+.new-card .inner-card-cta h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: var(--font-family);
+  text-transform: capitalize;
+  margin-top: 1rem;
+  color: var(--neutral-clr-1);
+}
+
+.new-card .inner-card-cta p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--neutral-clr-2);
+}
+
+.new-card .inner-card-cta:nth-child(1) p {
+  line-height: 1.7;
+  max-width: 90%;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.new-card .inner-card-cta:nth-child(1) p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  width: 102%;
+  height: 2px;
+  background-color: var(--neutral-clr-2);
+}
+
+.new-card .inner-card-cta:nth-child(2) p {
+  max-width: 93%;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.new-card .inner-card-cta:nth-child(2) p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  width: 102%;
+  height: 2px;
+  background-color: var(--neutral-clr-2);
+}
+
+.new-card .inner-card-cta:nth-child(3) p {
+  max-width: 100%;
+  margin-bottom: 4rem;
+}
+
+
+
+
+
+/* Main section*/
+.grid-general-container .last-card-container .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  margin: 2rem 1.5rem 0.9rem 1rem;
+}
+
+
+
+
+.grid-general-container .last-card-container .card img {
+  width: 100%;
+}
+
+
+
+.grid-general-container .last-card-container .card .inner-card-content-container {
+  grid-column: 2/3;                                                             /* container that wraps the inner items */
+}
+
+
+
+.grid-general-container .last-card-container .card h4{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: var(--neutral-clr-2);
+}
+
+
+
+.general-container .last-card-container .card h5{
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+
+
+
+
+.grid-general-container .last-card-container .card p{
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--neutral-clr-2);
+  width: 120%;
+}
+
+
+
+
+
+
+/* Media Query */
+@media screen and (min-width: 1440px) {
+  
+
+
+.navigation-container .container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+}
+
+
+
+.navigation-container .container-wrapper .container-logo img {
+  width: 90%;
+  padding: 3rem 0 0 4rem;
+}
+
+
+
+.container-wrapper ul{
+  display: flex;
+}
+
+
+
+.container-wrapper ul li a{
+  padding: 3rem 1.5rem 0 0;
+  font-size: 0.9375rem; 
+  font-weight: 400;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+
+
+.container-wrapper ul li a:active{
+  color: var(--primary-clr-1);
+}
+
+
+
+.container-wrapper ul li:nth-child(5n) {
+  padding-right: 4rem;
+}
+
+
+
+
+
+
+/* Cards section */
+.grid-general-container{
+ grid-template-columns: repeat(3, minmax (100px, auto));
+ grid-template-rows: repeat(2, minmax (100px, auto));
+ max-width: 1200px;
+ margin: 0 auto;
+
+} 
+
+
+
+
+
+.grid-general-container .bg-container-img-card{
+  grid-column: 1/3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

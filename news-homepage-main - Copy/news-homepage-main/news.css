@@ -1,0 +1,299 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.nav-text{
+    align-items: center;
+    display: flex;
+    margin-left: ;
+    justify-content: space-around;
+}
+.nav-text p{
+    margin-left: 30px;
+}
+.one{
+    /* background-color: green; */
+    grid-column: 1/span 3;
+    gap: 50px;
+/* column-gap:3000px; */
+
+}
+.one img{
+    width: 100%;
+    gap: 30px;
+}
+.two{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+     grid-row: span 2; 
+     gap: 50px;
+      padding: 20px; 
+      height: 495px;
+     column-gap: 30px;
+     /* width: 205px; */
+     margin-left: 20px;
+     padding: 0px 25px;
+}
+.two h1 {
+color:  hsl(35, 77%, 62%);
+}
+.two p{
+    color:lightgrey;
+}
+.three{
+    /* background-color: yellow; */
+    grid-column:  ;
+    font-size: 20px;
+    gap: 50px;
+    margin-top: 0px;
+    padding: 25px;
+}
+.four{
+    /* background-color: blue; */
+    grid-column:span 2;
+    padding:45px 20px;
+    gap: 50px;
+    margin-left: 135px;
+
+}
+.four p{
+    color:grey;
+}
+.four button{
+    background-color:hsl(5, 85%, 63%) ;
+    height: 30px;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    width: 125px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 960px;
+    grid-template-rows: 1fr 1fr;
+    margin:0px auto;
+    max-height: 750px;
+}
+.grid > div{
+ gap: 50px;
+}
+.grid-1{
+    display: flex;
+    margin: 0px auto;
+    width: 960px;
+    /* border: 2px solid black; */
+}
+.ones{
+    display: flex;
+    align-items: center;
+    /* height: 60px; */
+    justify-content: space-between;
+}
+.rev{
+    margin-left: 12px;
+    line-height: 30px;
+    /* margin-top: 130px; */
+    align-self: flex-end;
+}
+.grid-1 img{
+    margin-top: 62px;
+    /* align-self:flex-end; */
+    /* width: 150px; */
+    height: 90px;
+}
+@media screen and  (max-width:768px){
+      body{
+/* background-color: red; */
+/* width: 0px; */
+      }
+      .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    .nav-text{
+        align-items: center;
+        display:block;
+        margin-left: ;
+        display: none;
+        justify-content: space-around;
+    }
+    .nav-text p{
+        margin-left: 30px;
+    }
+    .one{
+        /* background-color: green; */
+        /* grid-column: 1/span 3; */
+        /* gap: 50px; */
+    /* column-gap:3000px; */
+    
+    }
+    .one img{
+        width: 50%;
+        margin:0px auto;
+        height:300px;
+        gap: 30px;
+
+    }
+    .two{
+        background-color: hsl(240, 100%, 5%);
+        color: white;
+         /* grid-row: span 2;  */
+         /* gap: 50px; */
+          padding: 120px; 
+          height: 495px;
+         column-gap: 30px;
+         /* width: 205px; */
+         margin-left: 0px;
+         /* line-height: 70px; */
+         padding: 0px 45px;
+    }
+    *{
+        margin: 0px;
+    }
+    .two h1 {
+    color:  hsl(35, 77%, 62%);
+    margin-top: 42px;
+    }
+    .text{
+        margin-top:75px;
+    }
+    .two p{
+        color:lightgrey;
+    }
+    .three{
+        /* background-color: yellow; */
+        grid-column:  ;
+        font-size: 20px;
+        /* gap: 50px; */
+        text-align: center;
+        margin-top: 0px;
+        /* padding: 25px; */
+    }
+    .four{
+        /* background-color: blue; */
+        grid-column:span 2;
+        padding:0px 20px;
+        /* gap: 50px; */
+        margin-top: 0px;
+        text-align: center;
+         margin-left: 0px; 
+    
+    }
+    .four p{
+        color:grey;
+    }
+
+
+    .four button{
+        background-color:hsl(5, 85%, 63%) ;
+        height: 30px;
+        color: white;
+        margin-top: 10px;
+        border: none;
+        width: 125px;
+    }
+    .grid{
+        display:block;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 960px;
+        grid-template-rows: 1fr 1fr;
+        margin:0px auto;
+        max-height: 750px;
+    }
+
+
+    .grid > div{
+     gap: 50px;
+    }
+
+
+    .grid-1{
+        display:flex;
+        flex-direction: column;
+        width: 300px;
+        text-align: center;
+        margin-top:405px;
+    }
+
+
+
+    .ones{
+        display: flex;
+        align-items: center;
+        /* height: 60px; */
+        /* justify-content: space-between; */
+    }
+    .rev{
+        margin-left:0px;
+        line-height: 30px;
+        /* margin-top: 130px; */
+        /* align-self: flex-end; */
+    }
+
+
+    .grid-1 img{
+        margin-top: 62px;
+        height: 90px;
+    }
+}
+
+
+
+@media screen and  (max-width:480px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr ;
+    /* margin: 7px auto; */
+    /* max-width: 120px; */
+  }
+  .one{
+/* margin: 0px auto; */
+display: grid;
+grid-template-columns: 1fr ;
+
+  }
+  .one img{
+    width: 70%;
+    /* padding: 5px; */
+    /* border: 8px solid white; */
+  }
+  .two{
+    display: grid;
+    /* margin: 0px auto; */
+    grid-template-columns: 1fr;
+    /* grid-column: span ; */
+    height:695px;
+    padding-bottom: 2px;
+    margin-top: 15px;
+    width: 80%;
+  }
+  .two p{ 
+    border-bottom: 1px solid grey;
+    
+  }
+  .text{
+    display: grid;
+    text-align: center;
+    /* margin-top: ; */
+  }
+  .three{
+    display: grid;
+    grid-column: 1/span 2;
+  }
+  .four{
+    display: grid;
+
+  }
+  .four button{
+    margin: 0px auto;
+  }
+  
+  .grid-1{
+    margin-top: 675px;
+  }  
+}
